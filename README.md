@@ -1,14 +1,7 @@
-# JEBAC KURWA HASFY.
-# POZDRO KURWA WRZUCAJ SE MOJA BAZE NA GH
+#FREE RAT AND BACK DOOR
 
 
-
-CRY MORE
-
+HASYF sparfy 3.5.1 i panel dbita za darmo PogU ? 
 
 
-
-
-kod sparfy 3.5.1 a panel z dbita 
-
-pozdro, sebt i hamish to 'programisci'
+Szpadel...#7428 
