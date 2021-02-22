@@ -1,0 +1,69 @@
+{
+    "commands": {
+        "prefix": {
+            "permserror": "> *An error occurred while setting the prefix!*\n\n> `Error content:`\n```yaml\n× You don't have enough permissions!\n```",
+            "errortitle": "An error occured!",
+            "argserrortitle": "Wrong use of command!",
+            "argserror": "> *Setting a new prefix*\n> `Wrong use of this command! The correct use of this command is:`\n```yaml\n{prefix}prefix (new prefix)\n```",
+            "blocked": "> *An error occurred while setting the prefix!*\n\n> `Error content:`\n```yaml\n× The new prefix of this server contains forbidden characters!\n```",
+            "toolong": "> *An error occurred while setting the prefix!*\n\n> `Error content:`\n```yaml\n× The new prefix of this server can be up to 3 characters long!\n```",
+            "succes": "Succes!",
+            "newprefix": "> *Setting a new prefix*\n> `The server's prefix has been updated successfully, its contents are:`\n```yaml\n{prefix}\n```"
+        },
+        "help": {
+            "hi": "Hello",
+            "desc": "> *Help Menu!*\n\n> <:moderacja:785492227342204948> ***Information Commands:***\n`{prefix}help` - **Show a list of bot commands**\n`{prefix}stats` - **Shows your server's advertising statistics**\n\n> <:narzedzia:785492283935424552> *Configuration Commands:*\n`{prefix}channel <#channel>`- **Sets the advertising channel**\n`{prefix}ad <ad content>`- **Sets the server ad**\n`{prefix}prefix <prefix>` - **Set a new server prefix**\n\n\n> <:koks_link:785167255302307870> ***Useful links:***\n<:linkacze:782576983187128343> [`Dashboard`](https://hasfy.pl/dashboard/)\n<:linkacze:782576983187128343> [`Support Server`](https://discord.gg/Aw6VgPWADW)\n<:linkacze:782576983187128343> [`Link to add a bot`](https://discord.com/api/oauth2/authorize?client_id=800031307656593418&permissions=8&redirect_uri=https%3A%2F%2Fhasfy.pl%2Fcallback&scope=bot)"
+        },
+        "stats": {
+            "title": "Server configuration status",
+            "channeltrue": "<a:tak_check:781831294841651230> `×` <#{channel}>",
+            "channelfalse": "<a:nie_przykro_mi:766648988253683723> `×` advertise channel not set\n",
+            "adfalse": "× Server advertise has not yet been set",
+            "adverified": "<a:tak_check:781831294841651230> `×` **Server advertise has been accepted**",
+            "adwaiting": "<a:timer:785590168715001881> `×` **Server advertise waiting for veryfication!**",
+            "adnotset": "<a:nie_przykro_mi:766648988253683723> `×` **Server advertise has been not set**",
+            "haspremium": "<a:tak_check:781831294841651230> `×` **The server has a premium upgrade**",
+            "donthavepremium": "<a:nie_przykro_mi:766648988253683723> `×` **The server does not have a premium upgrade**",
+            "haslink": "<a:tak_check:781831294841651230> `×` **Custom URL has been set! Link: https://hasfy.pl/L/{link}**",
+            "donthavelink": "<a:nie_przykro_mi:766648988253683723> `×` **Custom URL has not been set!**",
+            "channel": "Advertising channel:",
+            "status": "Ad configuration status:",
+            "customurlstatus": "Custom URL configuration status:",
+            "premiumstatus": "Premium upgrade status:",
+            "ad": "Server ad content:",
+            "for": "Made for:"
+        },
+        "channel": {
+            "permserror": "> *An error occurred while setting up the ad channel!*\n\n> `Error content:`\n```yaml\n× You don't have enough permissions!\n```",
+            "channelerror": "> *An error occurred while setting up the ad channel!*\n\n> `Error content:`\n```yaml\n× You need to tag the ad channel!\n```",
+            "novisible": "> *An error occurred while setting up the ad channel!*\n\n> `Error content`\n```yaml\n× The ad feed must be visible to the @everyone role!\n```",
+            "inviteerror": "> *An error occurred while setting up the ad channel!*\n\n> `Error content:`\n```yaml\n× The bot does not have the permission to create an invitation!\n```",
+            "channelset": "> *Setting up the ad channel*\n\n> `What's next?`\n```yaml\n× Set up server ad!\n```"
+        },
+        "ad": {
+            "permserror": "> *An error occurred while setting the ad for this server!*\n\n> `Error content:`\n```yaml\n× You don't have enough permissions!\n```",
+            "nochannel": "> *An error occurred while setting the ad for this server!*\n\n> `Error content:`\n```yaml\n× The ad channel has not been set!```",
+            "channeldeleted": "> *An error occurred while setting the ad for this server!*\n\n> `Error content:`\n```yaml\n× The ad channel has not been set!\n```",
+            "novisible": "> *An error occurred while setting the ad for this server!*\n\n> `Error content:`\n```yaml\n× The ad feed must be visible to the @everyone role!\n```",
+            "verification": "> *An error occurred while setting the ad for this server!*\n\n> `Error content:`\n```yaml\n× The ad is already being verified!\n```",
+            "argserror": "> *An error occurred while setting the ad for this server!*\n\n> `Error content:`\n```yaml\n× Your ad must have content!\n```",
+            "tooshort": "> *An error occurred while setting the ad for this server!*\n\n> `Error content:`\n```yaml\n× Advertisement must be at least 25 characters long!\n```",
+            "ping": "> *An error occurred while setting the ad for this server!*\n\n> `Error content:`\n```yaml\n× Advertising must not contain mentions!\n```",
+            "link": "> *An error occurred while setting the ad for this server!*\n\n> `Error content:`\n```yaml\n× The advertisement cannot contain a link generated by other bots or invitations to the server!\n```",
+            "toolong": "> *An error occurred while setting the ad for this server!*\n\n> `Error content::`\n```yaml\n× Advertisement cannot exceed 1000 characters!\n```",
+            "adset": "> *Setting up server advertising*\n\n> `What's next?`\n```yaml\n× The bot will inform you within 24 hours about the status of your ad.\n```"
+        },
+        "lang": {
+            "succes": "Succes!",
+            "langpl": "> *Ustawianie języków*\n\n> `Obecny język tego serwera to:`\n```yaml\nPolski\n```\n\n",
+            "langen": "> *Language setting*\n\n> `The current language of this server is:`\n```yaml\nEnglish\n```",
+            "errortitle": "An error occured!",
+            "errordesc": "> *Language setting*\n\n> `Wrong use of this command! The correct use of this command is:`\n```yaml\n?lang (en/pl)\n```",
+            "argserror": "> *Language setting*\n\n> `Wrong use of this command! The correct use of this command is:`\n```yaml\n?lang (en/pl)\n```"
+        }
+    },
+    "other": {
+        "errordesc": "> *An error was found in this command. All information was sent to the Hasfy.pl development team!* \n\n> `Possible reward options:` \n```yaml \n × Premium Upgrade \n × Access to Hasfy.pl Beta Server \n```",
+        "errorfooter": "× In order to award a prize for finding a bug, wait for contact with the Hasfy.pl administration!"
+    }
+}

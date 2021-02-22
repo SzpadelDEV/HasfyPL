@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="/public/owner.css">
+<head>
+    <title>Hasfy.pl 👑</title>
+    <link rel="icon" sizes="192x192" href="<%= client.user.displayAvatarURL({ dynamic: true }) %>">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <div class="header">
+        <a href="/" class="logo">Hasfy.pl</a>
+        <div class="header-right">
+            <a href="/">Strona główna</a>
+            <a href="/invite">Dodaj bota</a>
+            <a href="/support">Serwer Wsparcia</a>
+            <% if(user) { %>
+            <a href="/dashboard"><%- user.username %>#<%- user.discriminator %></a>
+            <% } else { %>
+            <a href="/login">Zaloguj</a>
+            <% } %>
+        </div>
+    </div>
+</head>
+
+<body>
+    <center>
+        <br>
+        <% logs.forEach(log => { %>
+            <%
+            let user = client.users.cache.get(log.user)
+            let guild = client.guilds.cache.get(log.guildId) 
+            %>
+<div class="logs">
+    <br>
+    <img class="rounded-circle" width="100" height="100" src="<%= `https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}.png` %>">
+    <br>
+    <% if(log.type == "add") { %>
+    <h1 style="text-align: center;"><%- user.username %>#<%- user.discriminator %> dodał reklame serwera <%- guild.name %> (<%- guild.id %>)</h1>
+    <br>
+    <% } %>
+</div>
+<br>
+<% }) %>
+</center>
+</body>

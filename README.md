@@ -1,4 +1,14 @@
-# HasfyPL
-ELO PLIKI MAM
+# JEBAC KURWA HASFY.
+# POZDRO KURWA WRZUCAJ SE MOJA BAZE NA GH
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/HtWZb3b"  ><a href="//imgur.com/a/HtWZb3b">Hasfy</a></blockquote>
+
+
+CRY MORE
+
+
+
+
+
+kod sparfy 3.5.1 a panel z dbita 
+
+pozdro, sebt i hamish to 'programisci'

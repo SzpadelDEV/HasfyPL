@@ -1,0 +1,120 @@
+<link rel="stylesheet" href="/public/user.css">
+<head>
+    <title>Hasfy.pl</title>
+    <meta charset="utf-8" />
+    <meta property="og:description" content="Hasfy.pl to nowy innowacyjny bot reklamowy który zdobył zaufanie 90 serwerów w zaledwie 4 dni! Nie zwlekaj i dodaj go już teraz!">
+    <meta property="og:title" content="Hasfy.pl | Dashboard">
+    <meta property="og:image" content="<%= client.user.displayAvatarURL({ dynamic: true }) %>">
+    <meta property="keywords" content="Hasfy, bot discord, discord">
+    <link rel="icon" sizes="192x192" href="<%= client.user.displayAvatarURL({ dynamic: true }) %>">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <div class="header">
+        <a href="/" class="logo">Hasfy.pl</a>
+        <div class="header-right">
+            <a href="/">Strona główna</a>
+            <a href="/invite">Dodaj bota</a>
+            <a href="/support">Serwer Wsparcia</a>
+            <% if(user) { %>
+            <a href="/logout" class="active">Wyloguj</a>
+            <% } else { %>
+            <a href="/login">Zaloguj</a>
+            <% } %>
+        </div>
+    </div>
+</head>
+<br>
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>Wybierz serwer, którym chcesz dzisiaj zarządzać <%= user.username %>#<%= user.discriminator %>!</h1>
+    <br>
+    <br>
+    <br>
+    <%
+    user.guilds.forEach(guild => { 
+        const permsOnGuild = new perms(guild.permissions);
+        if(!permsOnGuild.has("MANAGE_GUILD")) return;
+      %>
+      <center>
+<div class="card">
+<br>
+<% if (guild.icon) { %>
+    <img class="rounded-circle" width="100" height="100" src="<%= `https://cdn.discordapp.com/icons/${guild.id}/${guild.icon}.png` %>">
+<% } else { %>
+    <img class="rounded-circle" width="100" height="100" src="<%= `https://cdn.discordapp.com/attachments/699927066849574913/726529574069862440/Bez_nazwy.png` %>">
+<% } %>
+    <br>
+    <h1><%= guild.name %></h1>
+    <br>
+    <% if (client.guilds.cache.get(guild.id)) { %>
+        <a href="/dashboard/<%- guild.id %>"><button class="btngreen">Zarządzaj serwerem</button></a>
+    <% } else { %>
+    <a href="https://discord.com/api/oauth2/authorize?client_id=<%= client.user.id %>&permissions=8&scope=bot&guild_id=<%= guild.id %>"><button class="btnblue">Dodaj bota</button></a>
+    <% } %>
+    <br>
+    <br>
+</div>
+</center>
+<br>
+<% }) %>
+</body>
+<div class="snowflakes">
+    <div class="snowflake">
+        •
+    </div>
+    <div class="snowflake">
+        •
+    </div>
+    <div class="snowflake">
+        •
+    </div>
+    <div class="snowflake">
+        •
+    </div>
+    <div class="snowflake">
+        •
+    </div>
+    <div class="snowflake">
+        •
+    </div>
+    <div class="snowflake">
+        •
+    </div>
+    <div class="snowflake">
+        •
+    </div>
+    <div class="snowflake">
+        •
+    </div>
+    <div class="snowflake">
+        •
+    </div>
+</div>
+
+    <div style="margin-right: 16px; min-width: 250px;">
+<p class="hvwg31-1 bwxDch">© 2020 - 2021 | Autorzy strony: Hamish.dev#3003 & Sebt08#6275</p>
+
+<script>
+var modal = document.getElementById("accountcard");
+
+var btn = document.getElementById("openaccountcard");
+
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>

@@ -1,0 +1,42 @@
+<link rel="stylesheet" href="/public/dashboard.css">
+<head>
+    <title>Hasfy.pl 👑</title>
+    <link rel="icon" sizes="192x192" href="<%= client.user.displayAvatarURL({ dynamic: true }) %>">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <div class="header">
+        <a href="/" class="logo">Hasfy.pl</a>
+        <div class="header-right">
+            <a href="/">Strona główna</a>
+            <a href="/invite">Dodaj bota</a>
+            <a href="/support">Serwer Wsparcia</a>
+            <% if(user) { %>
+            <a href="/dashboard"><%- user.username %>#<%- user.discriminator %></a>
+            <% } else { %>
+            <a href="/login">Zaloguj</a>
+            <% } %>
+        </div>
+    </div>
+</head>
+<body>
+    <center>
+        <br>
+        <br>
+        <h1>Witaj <%- user.username %>#<%- user.discriminator %> w panelu właściciela!</h1>
+<div class="card">
+    <div class="card-header">
+        <br>
+        <h1>Wybieranie</h1>
+        <br>
+    </div>
+    <br>
+<a href="/owner/logs"><button class="btngreen">Logi</button></a>
+<br>
+<br> 
+<a href="/owner/agban"><button class="btngreen">Dodaj gbana</button></a>
+<br>
+<br>
+<a href="/owner/rgban"><button class="btnred">Usuń gbana</button></a>
+<br>
+</div>
+</center>
+</body>

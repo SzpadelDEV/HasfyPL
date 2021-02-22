@@ -1,0 +1,82 @@
+<link rel="stylesheet" href="/public/admin.css">
+<head>
+  <title>Hasfy.pl</title>
+  <link rel="icon" sizes="192x192" href="<%= client.user.displayAvatarURL({ dynamic: true }) %>">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <div class="header">
+      <a href="/" class="logo">Hasfy.pl</a>
+      <div class="header-right">
+          <a href="/">Strona główna</a>
+          <a href="/invite">Dodaj bota</a>
+          <a href="/support">Serwer Wsparcia</a>
+          <% if(user) { %>
+          <a href="/dashboard"><%- user.username %>#<%- user.discriminator %></a>
+          <% } else { %>
+          <a href="/login">Zaloguj</a>
+          <% } %>
+      </div>
+  </div>
+</head>
+<body>
+  <br>
+  <br>
+  <center>
+    <div class="card">
+        <% if (guild.icon) { %>
+            <img class="rounded-circle" width="200" height="200" src="<%= `https://cdn.discordapp.com/icons/${guild.id}/${guild.icon}.png` %>">
+        <% } else { %>
+            <img class="rounded-circle" width="200" height="200" src="<%= `https://cdn.discordapp.com/attachments/699927066849574913/726529574069862440/Bez_nazwy.png` %>">
+        <% } %>
+        <h3><%- guild.name %> (<%- guild.id %>)</h3>
+        <br>
+        <h3><%- user.username %>#<%- user.discriminator %> (<%- user.id %>)</h3>
+        <br>
+        <br>
+        <h4>Reklama serwera:</h4>
+        <textarea disabled='disabled'"><%- reklama.content %></textarea>
+        <br>
+        <br>
+        <a href="/admin"><button class="btnred">Powrót</button></a>
+        </div>
+        <br>
+        <br>
+        <div class="addcard">
+          <div class="card-header">
+            <br>
+            <h1>Dodawanie reklamy</h1>
+            <br>
+          </div>
+          <form>
+            <br>
+            <h2>ID serwera:</h2>
+            <input type="text" id="guildid" name="guildid" style="width: 20%;" disabled="disabled" value="<%- guild.id %>">
+            <br>
+            <h2>Numer:</h2>
+            <input type="number" id="number" name="number" style="width: 20%" placeholder="Numer...">
+            <br>
+            <br>
+            <a href="/admin/<%- guild.id %>/add"><button class="btngreen">Dodaj reklame</button></a>
+          </form>
+        </div>
+        <br>
+        <br>
+        <div class="removecard">
+          <div class="card-header">
+            <br>
+            <h1>Usuwanie reklamy</h1>
+            <br>
+          </div>
+          <form>
+            <br>
+            <h2>ID serwera:</h2>
+            <input type="text" id="guildid2" name="guildid2" style="width: 20%;" disabled="disabled" value="<%- guild.id %>">
+            <br>
+            <h2>Powód:</h2>
+            <textarea class="removetextarea" id="reason" name="reason" placeholder="Powód usunięcia reklamy..."></textarea>
+            <br>
+            <br>
+            <a href="/admin/<%- guild.id %>/remove"><button class="btngreen">Usuń reklame</button></a>
+          </form>
+        </div>
+      </center>
+</body>

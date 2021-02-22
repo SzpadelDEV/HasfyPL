@@ -1,0 +1,50 @@
+<link rel="stylesheet" href="/public/index.css">
+<head>
+    <title><%- link.link %></title>
+    <meta charset="utf-8" />
+    <meta property="og:site_name" content="Stronę wspiera sieć Hasfy.pl">
+    <meta property="og:description" content="<%- link.desc %>">
+    <meta property="og:title" content="<%- link.link %>">
+    <meta property="og:image" content="<%= client.user.displayAvatarURL({ dynamic: true }) %>">
+    <meta property="keywords" content="Hasfy, bot discord, discord">
+    <% if (guild.icon) { %>
+    <link rel="icon" sizes="192x192" href="<%= `https://cdn.discordapp.com/icons/${guild.id}/${guild.icon}.png` %>">
+    <% } else { %>
+        <link rel="icon" sizes="192x192" href="<%= `https://cdn.discordapp.com/attachments/699927066849574913/726529574069862440/Bez_nazwy.png` %>">
+    <% } %>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <div class="header">
+        <a href="/" class="logo">Hasfy.pl</a>
+        <div class="header-right">
+            <a href="/">Strona główna</a>
+            <a href="/invite">Dodaj bota</a>
+            <a href="/support">Serwer Wsparcia</a>
+            <% if(user) { %>
+            <a href="/dashboard"><%- user.username %>#<%- user.discriminator %></a>
+            <% } else { %>
+            <a href="/login">Zaloguj</a>
+            <% } %>
+        </div>
+    </div>
+</head>
+<body>
+    <div class="imgdiv">
+<img width="100%" height="95%" src="<%= link.background %>">
+<% if (guild.icon) { %>
+    <div class="imgicon"><img class="rounded-circle" width="200" height="200" src="<%= `https://cdn.discordapp.com/icons/${guild.id}/${guild.icon}.png` %>"></div>
+<% } else { %>
+    <div class="imgicon"><img class="rounded-circle" width="200" height="200" src="<%= `https://cdn.discordapp.com/attachments/699927066849574913/726529574069862440/Bez_nazwy.png` %>"></div>
+<% } %>
+<br>
+<div class="imgname"><h1><%- guild.name %></h1></div>
+<div class="imgdesc"><h3><%- link.desc %></h3></div>
+<br>
+<div class="imgbutton"><a href="<%- guildData.invite %>"><button class="btngreen">Dołącz</button></a></div></div>
+</div>
+<br>
+<br>
+<h1>Hasfy.pl</h1>
+<h3>Chcesz mieć własny link? To proste!<br> Ustaw go już dzisiaj w panelu.</h3>
+<br>
+<br>
+</body>

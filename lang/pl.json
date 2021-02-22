@@ -1,0 +1,69 @@
+{
+    "commands": {
+        "prefix": {
+            "permserror": "> *Podczas ustawiania prefixu napotkano błąd!*\n\n> `Treść błędu:`\n```yaml\n× Nie masz permisji!\n```",
+            "errortitle": "Wystąpił błąd!",
+            "argserrortitle": "Błędny schemat!",
+            "argserror": "> **Źle użyłeś tej komendy! Poprawne użycie tej komendy to: `{prefix}prefix (prefix)`**",
+            "blocked": "> **Nowy prefix tego serwera zawiera `niedozwolone znaki`**",
+            "toolong": "> **Nowy prefix tego serwera może mieć maksymalnie `3 znaki`!**",
+            "succes": "Sukces!",
+            "newprefix": "> **Prefix tego serwera został zaaktualizowany! Jego treść to: `{prefix}`**"
+        },
+        "help": {
+            "hi": "Cześć",
+            "desc": "> *Witaj w menu pomocy bota **Hasfy.pl***!\n\n> <:moderacja:785492227342204948> ***Komendy informacyjne:***\n`{prefix}help` - **Pokazuje spis komend bota Hasfy.pl**\n`{prefix}statystyki` - **Pokazuje statystyki reklamowe twojego serwera**\n\n> <:narzedzia:785492283935424552> *Komendy Konfiguracyjne:*\n`{prefix}kanal <#kanal>`- **Ustawia kanał reklam**\n`{prefix}reklama <reklama>`- **Ustawia reklamę serwera**\n`{prefix}prefix <prefix>` - **Ustawia nowy prefix serwera**\n\n\n> <:koks_link:785167255302307870> ***Przydatne linki:***\n<:linkacze:782576983187128343> [`Dashboard`](https://hasfy.pl/dashboard/)\n<:linkacze:782576983187128343> [`Serwer Wsparcia`](https://discord.gg/Aw6VgPWADW)\n<:linkacze:782576983187128343> [`Autoryzacja Bota`](https://discord.com/api/oauth2/authorize?client_id=800031307656593418&permissions=8&redirect_uri=https%3A%2F%2Fhasfy.pl%2Fcallback&scope=bot)"
+        },
+        "stats": {
+            "title": "Status konfiguracji serwera",
+            "channeltrue": "<a:tak_check:781831294841651230> `×` <#{channel}>",
+            "channelfalse": "<a:nie_przykro_mi:766648988253683723> `×` Kanał reklam nie został ustawiony\n",
+            "adfalse": "× Reklama serwera nie została jeszcze ustawiona",
+            "adverified": "<a:tak_check:781831294841651230> `×` **Rerklama serwera została zaakceptowana!**",
+            "adwaiting": "<a:timer:785590168715001881> `×` **Reklama serwera oczekuje na zatwierdzenie!**",
+            "adnotset": "<a:nie_przykro_mi:766648988253683723> `×` **Reklama serwera nie została jeszcze ustawiona!**",
+            "haspremium": "<a:tak_check:781831294841651230> `×` **Serwer posiada premium**",
+            "donthavepremium": "<a:nie_przykro_mi:766648988253683723> `×` **Serwer nie posiada premium**",
+            "haslink": "<a:tak_check:781831294841651230> `×` **Custom URL jest skonfigurowane! Link: https://hasfy.pl/l/{link}**",
+            "donthavelink": "<a:nie_przykro_mi:766648988253683723> `×` **Custom URL Nie zostało skonfigurowane!**",
+            "channel": "Kanał reklam:",
+            "status": "Status konfiguracji reklamy:",
+            "customurlstatus": "Status konfiguracji Custom URL:",
+            "premiumstatus": "Status ulepszenia premium:",
+            "ad": "Treść reklamy serwera:",
+            "for": "Wykonano dla:"
+        },
+        "channel": {
+            "permserror": "> *Podczas ustawiania kanału napotkano błąd!*\n\n> `Treść błędu:`\n```yaml\n× Nie masz permisji!\n```",
+            "channelerror": "> *Podczas ustawiania kanału napotkano błąd!*\n\n> `Treść błędu:`\n```yaml\n× Musisz oznaczyć kanał reklam\n```",
+            "novisible": "> *Podczas ustawiania kanału napotkano błąd!*\n\n> `Treść błędu:`\n```yaml\n× Kanał reklam musi być widoczny dla roli @everyone\n```",
+            "inviteerror": "> *Podczas ustawiania kanału napotkano błąd!*\n\n> `Treść błędu:`\n```yaml\n× Bot nie ma permisji do tworzenia zaproszeń!\n```",
+            "channelset": "> *Ustawianie kanału*\n\n> `Co następnie?`\n```yaml\n× Przejdź do ustawiania reklamy serwera!\n```"
+        },
+        "ad": {
+            "permserror": "> *Podczas ustawiania reklamy napotkano błąd!*\n\n> `Treść błędu:`\n```yaml\n× Nie masz permisji!\n```",
+            "nochannel": "> *Podczas ustawiania reklamy napotkano błąd!*\n\n> `Treść błędu:`\n```yaml\n× Nie ustawiłeś kanału reklam!\n```",
+            "channeldeleted": "> *Podczas ustawiania reklamy napotkano błąd!*\n\n> `Treść błędu:`\n```yaml\n× Nie ustawiłeś kanału reklam!\n```",
+            "novisible": "> *Podczas ustawiania reklamy napotkano błąd!*\n\n> `Treść błędu:`\n```yaml\n× Kanał reklam nie jest widoczny dla roli @everyone!\n```",
+            "verification": "> *Podczas ustawiania reklamy napotkano błąd!*\n\n> `Treść błędu:`\n```yaml\n× Reklama jest już w kolejce do weryfikacji!\n```",
+            "argserror": "> *Podczas ustawiania reklamy napotkano błąd!*\n\n> `Treść błędu:`\n```yaml\n× Reklama nie może być pusta\n```",
+            "tooshort": "> *Podczas ustawiania reklamy napotkano błąd!*\n\n> `Treść błędu:`\n```yaml\n× Reklama musi mieć w sobie minimum 25 znaków!\n```",
+            "ping": "> *Podczas ustawiania reklamy napotkano błąd!*\n\n> `Treść błędu:`\n```yaml\n× Reklama nie może zawierać w sobie wzmianki @here, @everyone, ról bądź użytkownika!\n```",
+            "link": "> *Podczas ustawiania reklamy napotkano błąd!*\n\n> `Treść błędu:`\n```yaml\n× Reklama nie może zawierać linku wygenerowanego przez inne boty!\n```",
+            "toolong": "> *Podczas ustawiania reklamy napotkano błąd!*\n\n> `Treść błędu:`\n```yaml\n× Treść reklamy nie może przekraczać więcej niż 1000 znaków!\n```",
+            "adset": "> *Ustawianie reklamy*\n\n> `Co teraz?`\n```yaml\n× Oczekuj na wiadomość prywatną od bota, z informacją o statusie reklamowym twojego serwera!\n```"
+        },
+        "lang": {
+            "succes": "Sukces!",
+            "langpl": "> *Ustawianie języków*\n\n> `Obecny język tego serwera to:`\n```yaml\nPolski\n```\n\n",
+            "langen": "> *Language setting*\n\n> `The current language of this server is:`\n```yaml\nEnglish\n```",
+            "errortitle": "Wystąpił błąd!",
+            "errordesc": "> *Zmiana języka*\n\n> `Źle użyłeś tej komendy! Poprawne uzycie to:`\n```yaml\n?lang (en/pl)\n```",
+            "argserror": "> *Zmiana języka*\n\n> `Źle użyłeś tej komendy! Poprawne uzycie to:`\n```yaml\n?lang (en/pl)\n```"
+        }
+    },
+    "other": {
+        "errordesc": "> *W tej komendzie został znaleziony error. Wszelakie informacje zostały przesłane do zespołu developerskiego sieci Hasfy.pl!*\n\n> `Możliwe opcje nagród:`\n```yaml\n× Ulepszenie Premium\n×Dostęp do Serwera Beta Hasfy.pl\n```",
+        "errorfooter": "× W celu przyznania nagrody za odnalezienie błędu, oczekuj na kontakt z administracją Hasfy.pl!"
+    }
+}
